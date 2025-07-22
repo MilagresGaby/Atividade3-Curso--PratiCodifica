@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centralizar com Flexbox */
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Grid de imagens */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Menu */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Botão Hamburger */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 800px) {
+  .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+}

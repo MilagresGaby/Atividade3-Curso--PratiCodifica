@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Completa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+        <h1>Bem-vindo ao Nosso Site</h1>
+        <p>Este é um parágrafo introdutório sobre o propósito deste website.</p>
+    </header>
+
+    <main>
+        <section id="missao">
+            <h2>Missão</h2>
+            <p>Nossa missão é fornecer soluções inovadoras e de alta qualidade para nossos clientes.</p>
+            <p id="importante">Este parágrafo tem uma borda superior especial.</p>
+        </section>
+
+        <section id="visao">
+            <h2>Visão</h2>
+            <p class="destaque">Queremos ser reconhecidos como líderes em nosso setor até 2030.</p>
+        </section>
+
+        <section class="galeria-container">
+            <h2>Nossa Galeria</h2>
+            <div class="galeria">
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 1">
+                    <figcaption>Legenda 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 2">
+                    <figcaption>Legenda 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 3">
+                    <figcaption>Legenda 3</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 4">
+                    <figcaption>Legenda 4</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 5">
+                    <figcaption>Legenda 5</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 6">
+                    <figcaption>Legenda 6</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 7">
+                    <figcaption>Legenda 7</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Imagem 8">
+                    <figcaption>Legenda 8</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
